@@ -1,0 +1,25 @@
+How to install:
+==================================================
+
+1. Copy everything to you extension directory
+2. Update your database with sql/update.sql file
+3. Make extension active by adding it in administration interface (Setup / Extensions), or edit settings/siteaccess/[your_siteacces]/site.ini.
+4. Give new policy to users: extension "pm" (full access).
+5. Navigate to uri:   pm/list_inbox
+
+Additional steps to integrate with forums in ezwebin/ezflow packages:
+6. Copy file from this extension:
+	   extension/ezpm/design/standard/override/templates/full/forum_topic.tpl
+   into
+   	   extension/ezwebin/design/ezwebin/override/templates/full/forum_topic.tpl
+   (confirm to override old file)
+7. Add link to Private Messaging module into pagelayout templates, see line 156 of 
+	   extension/ezpm/design/standard/templates/pm_pagelayout.tpl
+
+8. Enjoy Private Messaging module!
+
+
+Other settings:
+===================================================
+
+Version 0.9.1 has introduced ezpm.ini.php file, where email notification feature can be enabled.
