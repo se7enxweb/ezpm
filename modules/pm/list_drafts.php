@@ -15,7 +15,7 @@ else
 $viewParameters = array( 'offset' => $Offset );
 
 
-$tpl = templateInit();
+$tpl = eZTemplate::factory();
 $tpl->setVariable( 'type', 'drafts' );
 $tpl->setVariable( 'view_parameters', $viewParameters );
 $tpl->setVariable( 'list_count', eZPm::itemCount( 'drafts' ) );
@@ -24,8 +24,8 @@ $Result = array();
 $Result['content'] = $tpl->fetch( 'design:pm/list_drafts.tpl' );
 $Result['pagelayout'] = 'pm_pagelayout.tpl';
 $Result['path'] = array( array( 'url' => false,
-                                'text' => ezi18n( 'design/standard/ezpm', 'Private messaging' ) ),
+                                'text' => ezpI18n::tr( 'design/standard/ezpm', 'Private messaging' ) ),
                          array( 'url' => false,
-                                'text' => ezi18n( 'design/standard/ezpm', 'Drafts' ) ) );
+                                'text' => ezpI18n::tr( 'design/standard/ezpm', 'Drafts' ) ) );
 
 ?>

@@ -20,7 +20,7 @@ if ( $access['accessWord'] == 'yes' )
     {
         $Module->redirectTo( '/pm/list' );
     }
-    $tpl =& templateInit();
+    $tpl = eZTemplate::factory();
     $tpl->setVariable( 'title', 'Edit' );
     $tpl->setVariable( 'Message', $Message );
     $tpl->setVariable( 'messageID', $messageID );

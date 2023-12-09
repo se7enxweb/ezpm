@@ -31,7 +31,7 @@ foreach ( $contacts as $key => $contact )
     $contacts[$key]['contact_user_name'] = $user->Name;
 }
 
-$tpl = templateInit();
+$tpl = eZTemplate::factory();
 $tpl->setVariable( 'contacts', $contacts );
 $tpl->setVariable( 'list_count', eZContact::itemCount() );
 $tpl->setVariable( 'view_parameters', $viewParameters );
@@ -41,9 +41,9 @@ $Result = array();
 $Result['content'] = $tpl->fetch( 'design:pm/contact_list.tpl' );
 $Result['pagelayout'] = 'pm_pagelayout.tpl';
 $Result['path'] = array( array( 'url' => false,
-                                'text' => ezi18n( 'design/standard/ezpm', 'Private messaging' ) ),
+                                'text' => ezpI18n::tr( 'design/standard/ezpm', 'Private messaging' ) ),
                          array( 'url' => false,
-                                'text' => ezi18n( 'design/standard/ezpm','Contact list' ) ) );
+                                'text' => ezpI18n::tr( 'design/standard/ezpm','Contact list' ) ) );
 
 
 

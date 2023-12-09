@@ -25,7 +25,7 @@ foreach ( $blacklist as $key => $blacklisted )
 }
 
 
-$tpl = templateInit();
+$tpl = eZTemplate::factory();
 $tpl->setVariable( 'blacklist', $blacklist );
 $tpl->setVariable( 'blacklist_count', eZPmBlackList::itemCount() );
 $tpl->setVariable( 'view_parameters', $viewParameters );
@@ -35,8 +35,8 @@ $Result = array();
 $Result['content'] = $tpl->fetch( 'design:pm/blacklist.tpl' );
 $Result['pagelayout'] = 'pm_pagelayout.tpl';
 $Result['path'] = array( array( 'url' => false,
-                                'text' => ezi18n( 'design/standard/ezpm', 'Private messaging' ) ),
+                                'text' => ezpI18n::tr( 'design/standard/ezpm', 'Private messaging' ) ),
                          array( 'url' => false,
-                                'text' => ezi18n( 'design/standard/ezpm', 'Blacklist' ) ) );
+                                'text' => ezpI18n::tr( 'design/standard/ezpm', 'Blacklist' ) ) );
 
 ?>

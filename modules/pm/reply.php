@@ -33,13 +33,13 @@ if ( !$Message || $Message['owner_user_id'] != eZUser::currentUserID() )
 
 // adding Re: to reply message, but only once
 // not sure if this is ok, can be a problem when users are using different lang
-$reply = ezi18n( 'design/standard/ezpm', 'Re: ' );
+$reply = ezpI18n::tr( 'design/standard/ezpm', 'Re: ' );
 if ( substr ( $Message['subject'], 0, 4 ) != $reply )
 {
     $Message['subject'] = $reply . $Message['subject'];
 }
 
-$tpl = templateInit();
+$tpl = eZTemplate::factory();
 $tpl->setVariable( 'Message', $Message );
 $tpl->setVariable( 'recipientID', $userID );
 $tpl->setVariable( 'recipientName', $userID );
@@ -48,9 +48,9 @@ $Result = array();
 $Result['content'] = $tpl->fetch( 'design:pm/create.tpl' );
 $Result['pagelayout'] = 'pm_pagelayout.tpl';
 $Result['path'] = array( array( 'url' => false,
-                                'text' => ezi18n( 'design/standard/ezpm', 'Private messaging' ) ),
+                                'text' => ezpI18n::tr( 'design/standard/ezpm', 'Private messaging' ) ),
                          array( 'url' => false,
-                                'text' => ezi18n( 'design/standard/ezpm', 'Reply' ) ) );
+                                'text' => ezpI18n::tr( 'design/standard/ezpm', 'Reply' ) ) );
 
 
 ?>

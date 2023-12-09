@@ -74,7 +74,7 @@ else if ( $Module->isCurrentAction( 'SendMessage' ) )
 	    
 	    $hostname = eZSys::hostname();
 	
-	    $tpl = templateInit();
+	    $tpl = eZTemplate::factory();
 	    $tpl->setVariable( 'recipient', $receiver );
 	    //$tpl->setVariable( 'subject', $subject );
 	    //$tpl->setVariable( 'text', $messageText );

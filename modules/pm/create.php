@@ -24,7 +24,7 @@ if ( !is_object( $userObject ) )
 
 
 
-$tpl = templateInit();
+$tpl = eZTemplate::factory();
 $tpl->setVariable( 'recipientID', $userID );
 $tpl->setVariable( 'recipientName', $userID );
 
@@ -32,9 +32,9 @@ $Result = array();
 $Result['content'] = $tpl->fetch( 'design:pm/create.tpl' );
 $Result['pagelayout'] = 'pm_pagelayout.tpl';
 $Result['path'] = array( array( 'url' => false,
-                                'text' => ezi18n( 'design/standard/ezpm', 'Private messaging' ) ),
+                                'text' => ezpI18n::tr( 'design/standard/ezpm', 'Private messaging' ) ),
                          array( 'url' => false,
-                                'text' => ezi18n( 'design/standard/ezpm', 'Create new message' ) ) );
+                                'text' => ezpI18n::tr( 'design/standard/ezpm', 'Create new message' ) ) );
 
 
 

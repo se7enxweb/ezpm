@@ -28,7 +28,7 @@ eZPm::markMessageAsRead( $messageID );
 
 $is_contact = eZContact::isOnContactList( $message->SenderUserID );
 
-$tpl = templateInit();
+$tpl = eZTemplate::factory();
 $tpl->setVariable( 'user_id', $currentUserID );
 $tpl->setVariable( 'messageID', $messageID );
 $tpl->setVariable( 'is_contact', $is_contact );
@@ -37,7 +37,7 @@ $Result = array();
 $Result['content'] = $tpl->fetch( 'design:pm/pm.tpl' );
 $Result['pagelayout'] = 'pm_pagelayout.tpl';
 $Result['path'] = array( array( 'url' => false,
-                                'text' => ezi18n( 'design/standard/ezpm', 'Private messaging' ) ),
+                                'text' => ezpI18n::tr( 'design/standard/ezpm', 'Private messaging' ) ),
                          array( 'url' => false,
                                 'text' => $message->Subject ) );
 

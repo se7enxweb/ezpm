@@ -2,5 +2,6 @@
 
 [ModuleSettings]
 ExtensionRepositories[]=ezpm
+ModuleList[]=pm
 
 */?>
