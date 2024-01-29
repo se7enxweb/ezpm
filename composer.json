@@ -1,0 +1,24 @@
+{
+    "name": "se7enxweb/ezpm",
+    "description": "eZ Complete Private Messaging solution for your existing eZ Publish Websites. This is a Module Extension.",
+    "type": "ezpublish-legacy-extension",
+    "keywords": [ "eZ Publish", "eZ Publish Legacy", "eZ Publish Platform", "private", "messaging", "statistics", "secret", "im", "user features" ],
+    "homepage": "https://github.com/se7enxweb/ezpm",
+    "license": "GPL-2.0-or-later",
+    "authors": [
+        {
+            "name" : "7x",
+            "homepage": "https://se7enx.com",
+            "email": "info@se7enx.com",
+            "role": "Developer"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.0.0",
+        "se7enxweb/ezpublish-legacy-installer": "*"
+    },
+    "extra": {
+        "ezpublish-legacy-extension-name": "ezpm"
+    }
+}
