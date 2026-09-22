@@ -1,5 +1,7 @@
 <?php
 
+
+if ( !class_exists( 'eZPmFunctionCollection', false ) ) {
 class eZPmFunctionCollection
 {
     /*!
@@ -18,4 +20,6 @@ class eZPmFunctionCollection
 	}
 
 }
+}
+
 ?>
