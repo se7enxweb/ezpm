@@ -24,13 +24,14 @@
 
 class ezpmInfo
 {
-    function info()
+    static function info()
     {
         return array( 'Name' => "eZ Private Messaging",
-                      'Version' => "0.9.1",
+                      'Version' => "0.10.1",
                       'Copyright' => "Copyright (C) 2006-2008 Bartek Modzelewski",
                       'Author' => "Bartek Modzelewski",
-                      'License' => "GNU General Public License v2.0"
+                      'License' => "GNU General Public License v2.0",
+                      'Info_url' => "https://github.com/se7enxweb/ezpm"
                      );
     }
 }
