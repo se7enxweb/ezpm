@@ -11,6 +11,8 @@
 
 
     <script type="text/javascript" src={'javascript/tools/ezjsselection.js'|ezdesign}></script>
+    {* The selection toggles and the message rows that open the message (javascript/ezpm.js; no inline code). *}
+    <script type="text/javascript" src={'javascript/ezpm.js'|ezdesign}></script>
     
 
 {def $limit=10
@@ -25,7 +27,7 @@
 <form name="messages" action={"/pm/action/"|ezurl} method="post" >
 <table class="list" cellspacing="0">
     <tr>
-        <th class="tight"><img src={"toggle-button-16x16.gif"|ezimage} alt="{'Toggle selection'|i18n( 'design/admin/role/list')}" onclick="ezjs_toggleCheckboxes( document.messages, 'DeleteIDArray[]' ); return false;"/></th>
+        <th class="tight"><img src={"toggle-button-16x16.gif"|ezimage} alt="{'Toggle selection'|i18n( 'design/admin/role/list')}" data-ezpm-toggle-form="messages" data-ezpm-toggle-name="DeleteIDArray[]" /></th>
         <th>
             {if eq( $sorting, 'sender_asc' )}<a href={'/user/preferences/set/messages_list_sorting/sender_desc/'|ezurl}>{else}<a href={'/user/preferences/set/messages_list_sorting/sender_asc/'|ezurl}>{/if}{'To'|i18n( 'design/standard/ezpm' )}</a>
         </th>

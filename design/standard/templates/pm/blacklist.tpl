@@ -12,11 +12,13 @@
 
 
     <script type="text/javascript" src={'javascript/tools/ezjsselection.js'|ezdesign}></script>
+    {* The selection toggles and the message rows that open the message (javascript/ezpm.js; no inline code). *}
+    <script type="text/javascript" src={'javascript/ezpm.js'|ezdesign}></script>
 
     <form name="blacklist" action={"/pm/action/"|ezurl} method="post" >
     <table class="list" cellspacing="0">
         <tr>
-            <th class="tight"><img src={"toggle-button-16x16.gif"|ezimage} alt="{'Toggle selection'|i18n( 'design/admin/role/list')}" onclick="ezjs_toggleCheckboxes( document.blacklist, 'DeleteIDArray[]' ); return false;"/></th>
+            <th class="tight"><img src={"toggle-button-16x16.gif"|ezimage} alt="{'Toggle selection'|i18n( 'design/admin/role/list')}" data-ezpm-toggle-form="blacklist" data-ezpm-toggle-name="DeleteIDArray[]" /></th>
             <th>{'User name'|i18n( 'design/standard/ezpm' )}</th>
         </tr>
 
