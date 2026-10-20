@@ -6,10 +6,6 @@
         <translation>Temat</translation>
     </message>
     <message>
-        <source>Body</source>
-        <translation>Treść</translation>
-    </message>
-    <message>
         <source>From</source>
         <translation>Od</translation>
     </message>
@@ -22,20 +18,40 @@
         <translation>Wysłano</translation>
     </message>
     <message>
-        <source>Date received</source>
-        <translation>Odebrano</translation>
-    </message>
-    <message>
         <source>Date read</source>
-        <translation>Status</translation>
+        <translation>Data odczytu</translation>
     </message>
     <message>
         <source>Remove selected</source>
         <translation>Usuń zaznaczone</translation>
     </message>
     <message>
+        <source>Send</source>
+        <translation>Wyślij</translation>
+    </message>
+    <message>
+        <source>Store draft</source>
+        <translation>Zapisz wersję roboczą</translation>
+    </message>
+    <message>
+        <source>Discard draft</source>
+        <translation>Odrzuć kopię roboczą</translation>
+    </message>
+    <message>
+        <source>Recipient</source>
+        <translation>Odbiorca</translation>
+    </message>
+    <message>
+        <source>Subject</source>
+        <translation>Temat</translation>
+    </message>
+    <message>
+        <source>Body</source>
+        <translation>Treść</translation>
+    </message>
+    <message>
         <source>Private messaging</source>
-        <translation></translation>
+        <translation>Prywatne wiadomości</translation>
     </message>
     <message>
         <source>Inbox</source>
@@ -102,20 +118,12 @@
         <translation>Utwórz nową wiadomość</translation>
     </message>
     <message>
-        <source>Store draft</source>
-        <translation>Zachowaj kopię robczą</translation>
-    </message>
-    <message>
-        <source>Discard draft</source>
-        <translation>Odrzuć kopię roboczą</translation>
-    </message>
-    <message>
-        <source>Recipient</source>
-        <translation>Odbiorca</translation>
-    </message>
-    <message>
         <source>Re: </source>
         <translation>Odp: </translation>
-    </message>    
+    </message>
+    <message>
+        <source>Click here to read this message</source>
+        <translation>Kliknij tutaj, aby przeczytać tę wiadomość</translation>
+    </message>
 </context>
 </TS>
