@@ -2,7 +2,7 @@
 <software>
     <metadata>
         <name>eZ Private Messaging</name>
-        <version>0.10.1</version>
+        <version>0.10.2</version>
         <copyright>Copyright (C) 2006-2008 Bartek Modzelewski</copyright>
         <license>GNU General Public License v2.0</license>
         <info_url>https://github.com/se7enxweb/ezpm</info_url>

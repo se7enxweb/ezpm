@@ -27,7 +27,7 @@ class ezpmInfo
     static function info()
     {
         return array( 'Name' => "eZ Private Messaging",
-                      'Version' => "0.10.1",
+                      'Version' => "0.10.2",
                       'Copyright' => "Copyright (C) 2006-2008 Bartek Modzelewski",
                       'Author' => "Bartek Modzelewski",
                       'License' => "GNU General Public License v2.0",
