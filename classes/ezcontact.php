@@ -91,7 +91,7 @@ class eZContact extends eZPersistentObject
     }
 
 
-    static function fetchContactList( $limit = 10, $offset, $asObject = false )
+    static function fetchContactList( $limit = 10, $offset = 0, $asObject = false )
     {
         $userID = eZUser::currentUserID();
         $conds = array( 'user_id' => $userID  );
